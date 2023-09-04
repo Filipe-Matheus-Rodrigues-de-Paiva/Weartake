@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+}
+
+.center-div {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 0px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    height: 20px;
+}
+
+button {
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    top: 12px;
+    height: 85vh
+}
+
+.center-div-main {
+    height: 100%;
+    width: 82%;
+    display: flex;
+    gap: 35px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+}
+
+.product{
+    margin-right: 23px;
+    margin-bottom: 5px;
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(14, 14, 153, 0.705);
+}
+
+.search-bar-and-cart{
+    width: 30%;
+}
+
+img {
+    height: 120px;
+    background-color: rgb(173, 161, 161);
+}
+
+.info{
+    padding-top: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tag {
+    background-color: blue;
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title {
+    height: 0px;
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.price{
+    font-size: 14px;
+    color: blue;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+
+.description {
+    position: relative;
+    bottom: 12px;
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 10px;
+    line-height: 15px;
+}
+
+input {
+    width: 220px;
+    background-color: #F5F5F5;
+    height: 36px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+.search-button{
+    background-color: indigo;
+    width: 105px;
+    height: 36px;
+    color: white;
+    border-radius: 12px;
+}
+
+.cart{
+    border: 2px solid black;
+    position: relative;
+    top: 30px;
+    height: 380px;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    background-color: rgb(26, 26, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart > .header > h1 {
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.add_to_cart {
+    font-size: 14px;
+    width: fit-content;
+}
+
+.add_to_cart:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.cart-inside{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cart-inside-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-inside--message {
+    position: absolute;
+    top: 120px;
+    left: 110px;
+}
+
+.cart-inside > .cart-inside--message > h1 {
+    font-weight: 700;
+}
+
+.cart-inside > .cart-inside--message > p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.summary{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.hidden-message, .hidden-summary, .hidden-items {
+    display: none;
+}
+
+.summary > .quantity {
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-between;
+}
+
+.summary > .total {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 210px;
+}
+.cart-item {
+    margin-top: 10px;
+    min-height: 70px;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    gap: 8px;
+}
+
+.cart-item--info{
+    height: 100%;
+}
+
+.cart-item--info h3{
+    font-size: 18px;
+    line-height: 5px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+
+.cart-item--info p {
+    font-size: 14px;
+    color: blue;
+    font-weight: 600;
+}
+
+.cart-item--info > button{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.cart-item > img {
+    width: 25%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    background-color: white; /* Cor de fundo da barra de rolagem */
+  }
+  
+  /* Estilos para o polegar (o botão que você arrasta) da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: gray; /* Cor do polegar da barra de rolagem */
+    border-radius: 5px; /* Arredondamento do polegar da barra de rolagem */
+  }
+  
+  /* Estilos para a barra de rolagem quando estiver sendo arrastada */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: darkgray; /* Cor do polegar da barra de rolagem quando estiver sendo arrastado */
+  }
+
+  

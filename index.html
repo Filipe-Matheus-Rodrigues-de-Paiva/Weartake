@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <meta name="description" content="Ecommerce feito com javascript, CSS e HTML">
+    <meta name="keywords" content="Ecommerce, Javascript, HTML, CSS, DOM">
+    <meta name="author" content="Filipe Matheus">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="center-div">
+            <h2 class="logo">Weartake</h2>
+            <div class="menu">
+                <button class="menu-button">Todos</button>
+                <button class="menu-button">Acessórios</button>
+                <button class="menu-button">Calçados</button>
+                <button class="menu-button">Camisetas</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="center-div-main">
+            <div class="products">
+                <!-- DOM -->
+            </div>
+            <div class="search-bar-and-cart">
+                <div style="margin-top: 20px;">
+                    <input type="text" placeholder="Digite um produto">
+                    <button class="search-button">Pesquisar</button>
+                </div>
+                <div class="cart">
+                    <div class="header">
+                        <h1>Carrinho de compras</h1>
+                    </div>
+                    <div class="cart-inside">
+                        <div class="hidden-items">
+                        </div>
+                        <div class="cart-inside--message">
+                            <h1>Carrinho vazio</h1>
+                            <p>Adicione itens</p>
+                        </div>
+                        <div class="hidden-summary">
+                            <div class="quantity">
+                                <h1>Quantidade:</h1>
+                                <span>0</span>
+                            </div>
+                            <div class="total">
+                                <h1>Total:</h1>
+                                <span>R$ 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
